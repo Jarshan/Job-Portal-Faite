@@ -1,0 +1,44 @@
+.companies-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.top-companies, .featured-companies {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.company-card, .featured-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+}
+
+.company-logos img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.view-jobs {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-jobs:hover {
+  background: darkblue;
+}

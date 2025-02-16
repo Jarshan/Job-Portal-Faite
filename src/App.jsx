@@ -48,6 +48,7 @@ import SignUp from './components/Signup';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import JobCategory from './components/JobCategory';
+import CompanySection from './components/CompaniesSection';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -63,7 +64,9 @@ const Layout = ({ children }) => {
 
       {/* ❌ Hide JobCategory & Footer ONLY on login/signup pages */}
       {!isAuthPage && <JobCategory />}
+      {!isAuthPage && <CompanySection />}
       {!isAuthPage && <Footer />}
+     
     </div>
   );
 };

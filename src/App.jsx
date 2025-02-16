@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import CandidateForm from './components/CandidateForm';
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
     <Navbar/>
     <Routes>
        <Route path="/" element={<Home/>} />
+       <Route path="/candidate" element={<CandidateForm/>} />
       
     </Routes>
   </Router>

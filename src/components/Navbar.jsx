@@ -19,15 +19,15 @@ import "../styles/Navbar.css";
 const Navbar = () => (
   <nav className="navbar">
     <div className="logo">
-      <h1>jobenvoy.com</h1>
+    
+      <h1>FAITE.JOB</h1>
     </div>
     <div className="nav-links">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/jobs">Jobs</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/cv-services">CV Services</Link>
-      <Link to="/resources">Resources</Link>
+      <Link to="/services"> Services</Link>
+      
     </div>
     <div className="auth-links">
       <Link to="/signup">Sign Up</Link>

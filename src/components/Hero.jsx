@@ -13,9 +13,9 @@ import { useState, useEffect } from "react";
 import "../styles/Hero.css";
 
 const images = [
-  "/images/slide1.jpg",
-  "/images/slide2.jpg",
-  "/images/slide3.jpg",
+  "/Images/Pic1.jpg",
+  "/Images/Pic2.jpg",
+  "/Images/Pic3.jpg",
 ];
 
 const Hero = () => {

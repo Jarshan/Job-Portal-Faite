@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import CandidateForm from './components/CandidateForm';
+import RecruiterDashboard from './components/RecruiterDashboard';
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
     <Routes>
        <Route path="/" element={<Home/>} />
        <Route path="/candidate" element={<CandidateForm/>} />
+       <Route path="/recruiter" element={<RecruiterDashboard/>} />
       
     </Routes>
   </Router>

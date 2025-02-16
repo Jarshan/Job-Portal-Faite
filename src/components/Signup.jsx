@@ -27,44 +27,44 @@ const SignUp = () => {
       </div>
 
       <form className="signup-form">
-        <div className="input-group">
-          <input type="text" placeholder="First Name" required />
-          <span className="icon">👤</span>
-        </div>
-
-        <div className="input-group">
-          <input type="text" placeholder="Last Name" required />
-          <span className="icon">👤</span>
-        </div>
-
-        <div className="input-group">
-          <input type="email" placeholder="Email" required />
-          <span className="icon">📧</span>
-        </div>
-
-        <div className="input-group">
-          <input type="password" placeholder="Password" required />
-          <span className="icon">🔑</span>
-        </div>
-
-        <div className="input-group">
-          <input type="password" placeholder="Re-enter password" required />
-          <span className="icon">🔑</span>
-        </div>
-
-        <div className="input-group">
-          <select>
-            <option>(+94) Sri Lanka</option>
-          </select>
-        </div>
-
-        <div className="input-group">
-          <input type="text" placeholder="Phone Number" required />
-          <span className="icon">📞</span>
-        </div>
-
-        {userType === "jobseeker" && (
+        {userType === "jobseeker" ? (
           <>
+            <div className="input-group">
+              <input type="text" placeholder="First Name" required />
+              <span className="icon">👤</span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Last Name" required />
+              <span className="icon">👤</span>
+            </div>
+
+            <div className="input-group">
+              <input type="email" placeholder="Email" required />
+              <span className="icon">📧</span>
+            </div>
+
+            <div className="input-group">
+              <input type="password" placeholder="Password" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="password" placeholder="Re-enter password" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <select>
+                <option>(+94) Sri Lanka</option>
+              </select>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Phone Number" required />
+              <span className="icon">📞</span>
+            </div>
+
             <div className="experience-selection">
               <button
                 className={experience === "experienced" ? "active" : ""}
@@ -91,6 +91,59 @@ const SignUp = () => {
             <div className="input-group file-upload">
               <label>Upload your CV</label>
               <input type="file" />
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="input-group">
+              <input type="text" placeholder="Organization Name" required />
+              <span className="icon">🏢</span>
+            </div>
+
+            <div className="input-group">
+              <input type="email" placeholder="Email" required />
+              <span className="icon">📧</span>
+            </div>
+
+            <div className="input-group">
+              <input type="password" placeholder="Password" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="password" placeholder="Re-enter password" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <select>
+                <option>(+94) Sri Lanka</option>
+                <option>(+41) Switzerland</option>
+                <option>(+44) UK</option>
+                <option>(+91) India</option>
+                <option>(+27) South Africa</option>
+              </select>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Phone Number" required />
+              <span className="icon">📞</span>
+            </div>
+
+            <div className="input-group">
+              <select>
+                <option>Title</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+                <option>Dr.</option>
+              </select>
+              <input type="text" placeholder="Name of contact person" required />
+              <span className="icon"></span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Job title of contact" required />
+              <span className="icon">📌</span>
             </div>
           </>
         )}

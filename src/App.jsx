@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import CandidateForm from './components/CandidateForm';
 import RecruiterDashboard from './components/RecruiterDashboard';
 import SignUp from './components/Signup';
+import Login from './components/Login';
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
        <Route path="/candidate" element={<CandidateForm/>} />
        <Route path="/recruiter" element={<RecruiterDashboard/>} />
        <Route path="/signup" element={<SignUp/>} />
+       <Route path="/login" element={<Login/>} />
     </Routes>
   </Router>
   </div>

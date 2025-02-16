@@ -6,12 +6,15 @@ import CandidateForm from './components/CandidateForm';
 import RecruiterDashboard from './components/RecruiterDashboard';
 import SignUp from './components/Signup';
 import Login from './components/Login';
+import Footer from './components/Footer';
+
 
 
 
 const App = () => {
   return (
     <div>
+      
   <Router>
     <Navbar/>
     <Routes>
@@ -20,7 +23,10 @@ const App = () => {
        <Route path="/recruiter" element={<RecruiterDashboard/>} />
        <Route path="/signup" element={<SignUp/>} />
        <Route path="/login" element={<Login/>} />
+       
     </Routes>
+    <Footer/>
+    
   </Router>
   </div>
   )

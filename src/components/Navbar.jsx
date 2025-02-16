@@ -1,13 +1,28 @@
-import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
+// import { Link } from "react-router-dom";
+// import "../styles/Navbar.css";
+
+
+
+
 
 // const Navbar = () => (
 //   <nav className="navbar">
-//     <h1>Job Portal</h1>
+//     <div className="logo">
+    
+//       <h1>FAITE.JOB</h1>
+//     </div>
 //     <div className="nav-links">
 //       <Link to="/">Home</Link>
-//       <Link to="/candidate">Submit Profile</Link>
-//       <Link to="/recruiter">Recruiter Dashboard</Link>
+      
+//       <Link to="/jobs">Jobs</Link>
+//       <Link to="/companies">Companies</Link>
+//       <Link to="/services"> Services</Link>
+      
+//     </div>
+//     <div className="auth-links">
+//       <Link to="/signup">Sign Up</Link>
+//       <Link to="/login">Login</Link>
+//       <button className="employer-btn">+ For Employers</button>
 //     </div>
 //   </nav>
 // );
@@ -15,26 +30,83 @@ import "../styles/Navbar.css";
 // export default Navbar;
 
 
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
-const Navbar = () => (
-  <nav className="navbar">
-    <div className="logo">
-    
-      <h1>FAITE.JOB</h1>
-    </div>
-    <div className="nav-links">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/jobs">Jobs</Link>
-      <Link to="/services"> Services</Link>
+const Navbar = () => {
+  const [dropdown, setDropdown] = useState(null);
+
+  const handleMouseEnter = (menu) => setDropdown(menu);
+  const handleMouseLeave = () => setDropdown(null);
+
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <h1>FAITE.JOB</h1>
+        
+      </div>
       
-    </div>
-    <div className="auth-links">
-      <Link to="/signup">Sign Up</Link>
-      <Link to="/login">Login</Link>
-      <button className="employer-btn">+ For Employers</button>
-    </div>
-  </nav>
-);
+      <div className="nav-links">
+
+      <div className="home-tab">
+      <Link to="/">Home</Link>
+        </div>
+      
+        <div 
+          className="nav-item"
+          onMouseEnter={() => handleMouseEnter("jobs")}
+          onMouseLeave={handleMouseLeave}
+        >
+          
+          <Link to="/jobs">Jobs</Link>
+          {dropdown === "jobs" && (
+            <div className="dropdown">
+              <Link to="/jobs/full-time">Full Time</Link>
+              <Link to="/jobs/part-time">Part Time</Link>
+              <Link to="/jobs/internships">Internships</Link>
+            </div>
+          )}
+        </div>
+
+        <div 
+          className="nav-item"
+          onMouseEnter={() => handleMouseEnter("companies")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Link to="/companies">Companies</Link>
+          {dropdown === "companies" && (
+            <div className="dropdown">
+              <Link to="/companies/top">Top Companies</Link>
+              <Link to="/companies/startups">Startups</Link>
+              <Link to="/companies/international">International</Link>
+            </div>
+          )}
+        </div>
+
+        <div 
+          className="nav-item"
+          onMouseEnter={() => handleMouseEnter("services")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Link to="/services">Services</Link>
+          {dropdown === "services" && (
+            <div className="dropdown">
+              <Link to="/services/resume">Resume Writing</Link>
+              <Link to="/services/career-coaching">Career Coaching</Link>
+              <Link to="/services/subscriptions">Subscriptions</Link>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="auth-links">
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Login</Link>
+        <button className="employer-btn">+ For Employers</button>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

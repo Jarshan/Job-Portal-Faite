@@ -13,7 +13,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <button className="close-btn">✖</button>
+      
       <h2>User Login</h2>
       
       <form onSubmit={handleSubmit} className="login-form">

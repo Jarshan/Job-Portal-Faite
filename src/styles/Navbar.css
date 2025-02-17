@@ -1,96 +1,206 @@
-/*  
+/* ====== Navbar Base Styles ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
 
-   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  
-  .nav-links a, .auth-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .employer-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-   */
+/* ====== Logo Styling ====== */
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
 
-   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
+/* ====== Navigation Links ====== */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+/* Default Link Styling */
+.nav-links a,
+.auth-links a,
+.nav-item > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover Effect: Turn Text Orange */
+.nav-links a:hover,
+.auth-links a:hover,
+.nav-item:hover > a {
+  color: orange;
+}
+
+/* ====== Dropdown Menu Styling ====== */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+/* Show dropdown independently below hovered item */
+.nav-item:hover .dropdown,
+.employer-btn-container:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(5px);
+  left: 0;
+}
+
+/* Align dropdowns correctly under each item */
+.nav-item {
+  position: relative;
+}
+
+.nav-item .dropdown {
+  left: 0;
+}
+
+/* Dropdown Links */
+.dropdown a, .dropdown button {
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Dropdown Items */
+.dropdown a:hover,
+.dropdown button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* ====== Employer Button Styling ====== */
+.employer-btn-container {
+  position: relative;
+  display: inline-block;
+}
+
+.employer-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Employer Dropdown */
+.employer-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+/* Employer Dropdown items behave like other menu items */
+.employer-dropdown a,
+.employer-dropdown button {
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Employer Dropdown Items */
+.employer-dropdown a:hover,
+.employer-dropdown button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* ====== Authentication Links (Register & Login) ====== */
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Hover Effect for Register & Login */
+.auth-links a:hover {
+  color: orange;
+}
+
+/* ====== Mobile Responsive Design ====== */
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  /* Mobile Menu */
   .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
     display: flex;
-    gap: 20px;
   }
-  
-  .nav-item {
-    position: relative;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
+
+  /* Dropdowns Adjustments */
   .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    width: 100%;
+    position: static;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  /* Authentication Links */
+  .auth-links {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .dropdown a {
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .dropdown a:hover {
-    background-color: orange;
-    color: white;
-  }
-  
+
   .auth-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    display: block;
+    margin: 5px 0;
   }
-  
-  .employer-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
+}

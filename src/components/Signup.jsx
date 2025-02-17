@@ -8,8 +8,8 @@ const SignUp = () => {
   return (
     <div className="signup-container">
       <div className="signup-header">
-        <h2>Sign Up</h2>
-        <p>as</p>
+        <h2>Create your Faite profile</h2>
+        <p>Search & apply to jobs from Sri Lanka's No.1 Job Site</p>
         <div className="user-type">
           <button
             className={userType === "jobseeker" ? "active" : ""}
@@ -29,18 +29,17 @@ const SignUp = () => {
       <form className="signup-form">
         {userType === "jobseeker" ? (
           <>
+             
             <div className="input-group">
-              <input type="text" placeholder="First Name" required />
+                
+              <input type="text" placeholder="Full Name" required />
               <span className="icon">👤</span>
             </div>
 
-            <div className="input-group">
-              <input type="text" placeholder="Last Name" required />
-              <span className="icon">👤</span>
-            </div>
+            
 
             <div className="input-group">
-              <input type="email" placeholder="Email" required />
+              <input type="email" placeholder="Email ID" required />
               <span className="icon">📧</span>
             </div>
 
@@ -50,18 +49,49 @@ const SignUp = () => {
             </div>
 
             <div className="input-group">
-              <input type="password" placeholder="Re-enter password" required />
+              <input type="text" placeholder="Years of Experience" required />
               <span className="icon">🔑</span>
             </div>
 
             <div className="input-group">
+              <input type="text" placeholder="Worked Company Name" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Position" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Key Skills" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Educational Qualification" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            <div className="input-group">
+              <input type="text" placeholder="Job Preference" required />
+              <span className="icon">🔑</span>
+            </div>
+
+            
+
+            <div className="input-group">
               <select>
                 <option>(+94) Sri Lanka</option>
+                <option>(+41) Switzerland</option>
+                <option>(+44) UK</option>
+                <option>(+91) India</option>
+                <option>(+27) South Africa</option>
               </select>
             </div>
 
             <div className="input-group">
-              <input type="text" placeholder="Phone Number" required />
+              <input type="text" placeholder="Mobile Number" required />
               <span className="icon">📞</span>
             </div>
 
@@ -95,6 +125,7 @@ const SignUp = () => {
           </>
         ) : (
           <>
+          
             <div className="input-group">
               <input type="text" placeholder="Organization Name" required />
               <span className="icon">🏢</span>
@@ -149,7 +180,7 @@ const SignUp = () => {
         )}
 
         <button type="submit" className="signup-button">
-          Sign Up
+          Register
         </button>
       </form>
     </div>

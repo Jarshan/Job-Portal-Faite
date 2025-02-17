@@ -2,18 +2,21 @@ import React from "react";
 import "../styles/JobCategory.css";
 
 const jobCategory = [
-  { title: "Marketing / Communication Jobs", jobs: 9, icon: "📢" },
-  { title: "Sales / Business Development Jobs", jobs: 15, icon: "📊" },
-  { title: "Other", jobs: 32, icon: "🔧" },
-  { title: "HR / Recruitment Jobs", jobs: 3, icon: "👥" },
-  { title: "Accounting / Finance Jobs", jobs: 14, icon: "💼" },
-  { title: "Finance / Banking Jobs", jobs: 1, icon: "💰" },
-  { title: "Production / Manufacturing Jobs", jobs: 4, icon: "⚙️" },
-  { title: "Procurement / Supply Chain Jobs", jobs: 4, icon: "📦" },
-  { title: "IT - Software Jobs", jobs: 10, icon: "🤖" },
-  { title: "Healthcare Jobs", jobs: 5, icon: "❤️" },
-  { title: "Maintenance Jobs", jobs: 3, icon: "🔧" },
-  { title: "Restaurant / Food Services Jobs", jobs: 2, icon: "🍽️" },
+  { title: "Remote", jobs: 9 },
+  { title: "MNC", jobs: 15},
+  { title: "Software and IT", jobs: 32 },
+  { title: "Internship", jobs: 12},
+  { title: "Hiring Manager", jobs: 5},
+  { title: "Fortune", jobs: 9},
+  { title: "Supply Chain", jobs: 11},
+  { title: "Startup", jobs: 11},
+  { title: "Fresher", jobs: 18},
+  { title: "Project Management", jobs: 14},
+  { title: "Finance / Banking Jobs", jobs: 1},
+  { title: "Production / Manufacturing Jobs", jobs: 4},
+  { title: "Healthcare Jobs", jobs: 5},
+  { title: "Maintenance Jobs", jobs: 3},
+  { title: "Restaurant / Food Services Jobs", jobs: 2 },
 ];
 
 const JobCategory = () => {

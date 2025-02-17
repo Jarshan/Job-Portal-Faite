@@ -38,26 +38,26 @@
     margin-bottom: 10px;
   }
   
-  /* ✅ Hover Effect: Change background & bring card forward */
-  .category-card:hover {
-    background: #d26d1b !important;  /* Change to orange */
-    color: white;
-    transform: scale(1.1); /* Slightly enlarge */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
-    z-index: 10;
-  }
   
-  /* Ensure text & icon also change color on hover */
-  .category-card:hover h3,
-  .category-card:hover p,
-  .category-card:hover .category-icon {
-    color: white;
-  }
   
   /* Mobile Responsive */
   @media (max-width: 768px) {
     .category-container {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+  }
+  
+
+  
+  
+  .category-card {
+    border: 2px solid transparent; /* Initial transparent border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    border-color: #d26d1b; /* Change border color to orange */
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow */
   }
   

@@ -3,6 +3,10 @@
   padding: 40px 20px;
 }
 
+.companies-section h2 span{
+  color: orange;
+}
+
 .top-companies, .featured-companies {
   display: flex;
   overflow-x: auto;
@@ -11,13 +15,25 @@
   white-space: nowrap;
 }
 
+
+
 .company-card, .featured-card {
   background: white;
-  padding: 15px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 250px;
+  border: 2px solid transparent; /* Default transparent border */
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.company-card:hover, .featured-card:hover {
+  border-color: #d26d1b; /* Change border color to orange */
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+
 
 .company-logos img {
   width: 100px;

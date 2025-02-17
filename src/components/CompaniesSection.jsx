@@ -3,17 +3,17 @@ import "../styles/CompaniesSection.css"; // Create a CSS file for styling
 
 const CompaniesSection = () => {
   const topCompanies = [
-    { title: "MNCs", hiring: "2.1K+", logos: ["logo1.png", "logo2.png", "logo3.png"] },
-    { title: "Edtech", hiring: "151", logos: ["logo4.png", "logo5.png", "logo6.png"] },
-    { title: "Healthcare", hiring: "590", logos: ["logo7.png", "logo8.png", "logo9.png"] },
-    { title: "Unicorns", hiring: "97", logos: ["logo10.png", "logo11.png", "logo12.png"] }
+    { title: "MNCs", hiring: "2.1K+", logos: ["Images/Pic5.png"] },
+    { title: "Edtech", hiring: "151", logos: ["Images/Pic6.png"] },
+    { title: "Healthcare", hiring: "590", logos: ["Images/Pic7.png"] },
+    { title: "Unicorns", hiring: "97", logos: ["Images/Pic8.png"] }
   ];
 
   const featuredCompanies = [
-    { name: "Datamatics", rating: 3.5, reviews: "2K+", description: "Global digital solutions & technology company", logo: "logo13.png" },
-    { name: "Jio", rating: 3.9, reviews: "2.3K+", description: "True 5G is here to unlock the limitless era.", logo: "logo14.png" },
-    { name: "Empower", rating: 3.8, reviews: "272", description: "We’re a financial services company.", logo: "logo15.png" },
-    { name: "JP Morgan", rating: 4.0, reviews: "6K+", description: "Leader in financial services.", logo: "logo16.png" }
+    { name: "Genpact", rating: 3.5, reviews: "2K+", description: "Global digital solutions & technology company", logo: "Images/Pic4.png" },
+    { name: "Apple", rating: 3.9, reviews: "2.3K+", description: "True 5G is here to unlock the limitless era.", logo: "Images/Pic9.png" },
+    { name: "Avalara Technologies", rating: 3.8, reviews: "272", description: "We’re a financial services company.", logo: "Images/Pic10.png" },
+    { name: "Reliance Retail", rating: 4.0, reviews: "6K+", description: "Leader in financial services.", logo: "Images/Pic11.png" }
   ];
 
   return (

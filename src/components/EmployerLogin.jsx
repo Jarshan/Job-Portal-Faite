@@ -50,6 +50,7 @@
 
 import React, { useState } from "react";
 import "../styles/EmployerLogin.css";
+import { Link } from "react-router-dom";
 
 
 const EmployerLogin = () => {
@@ -78,7 +79,7 @@ const EmployerLogin = () => {
           <h2>Select the Perfect Candidate for Your Business</h2>
           <p>To Choose Right Jobs.</p>
           <button className="post-job-btn">+ Post Jobs</button>
-          <button className="post-job-btn">Search Candidates</button>
+          <Link to="/recruiter"><button className="post-job-btn">Search Candidates</button></Link>
         </div>
 
 

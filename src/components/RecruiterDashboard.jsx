@@ -1,22 +1,197 @@
-import { useState } from "react";
-import CandidateCard from "./CandidateCard";
-import "../styles/RecruiterDashboard.css";
 
-const mockCandidates = [
-  { fullName: "John Doe", experience: "5", jobPreference: "Software Engineer", skills: "React, Node.js", education: "BSc Computer Science" },
-  { fullName: "Jane Smith", experience: "3", jobPreference: "Data Scientist", skills: "Python, ML, SQL", education: "MSc Data Science" },
-];
+
+// import React, { useState } from 'react';
+
+// const RecruiterDashboard = () => {
+//   const [searchQuery, setSearchQuery] = useState('');
+//   const [candidates, setCandidates] = useState([
+    // Mock data
+//     {
+//       id: 1,
+//       fullName: 'John Doe',
+//       experience: 5,
+//       skills: ['React', 'Node.js'],
+//       desiredJob: 'Frontend Developer',
+//       cvUrl: '/path/to/cv.pdf',
+//     },
+//     {
+//       id: 2,
+//       fullName: 'Jane Smith',
+//       experience: 3,
+//       skills: ['Python', 'Data Analysis'],
+//       desiredJob: 'Data Scientist',
+//       cvUrl: '/path/to/cv.pdf',
+//     },
+
+//     {
+//       id: 3,
+//       fullName: 'Mohamed Jarshan',
+//       experience: 1,
+//       skills: ['Laravel', 'MERN'],
+//       desiredJob: 'Software Engineer',
+//       cvUrl: '/path/to/cv.pdf',
+//     },
+//   ]);
+
+//   const filteredCandidates = candidates.filter((candidate) =>
+//     candidate.desiredJob.toLowerCase().includes(searchQuery.toLowerCase())
+//   );
+
+//   return (
+//     <div>
+//       <h1>Recruiter Dashboard</h1>
+//       <input
+//         type="text"
+//         placeholder="Search by job position..."
+//         value={searchQuery}
+//         onChange={(e) => setSearchQuery(e.target.value)}
+//       />
+
+//       <div>
+//         {filteredCandidates.map((candidate) => (
+//           <div key={candidate.id}>
+//             <h3>{candidate.fullName}</h3>
+//             <p>Experience: {candidate.experience} years</p>
+//             <p>Skills: {candidate.skills.join(', ')}</p>
+//             <p>Desired Job: {candidate.desiredJob}</p>
+//             <a href={candidate.cvUrl} download>Download CV</a>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default RecruiterDashboard;
+
+import React, { useState } from 'react';
+import "../styles/RecruiterDashboard.css"; // Import the CSS file
 
 const RecruiterDashboard = () => {
-  const [search, setSearch] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
+  const [candidates, setCandidates] = useState([
+
+    {
+      id: 1,
+      fullName: 'Mohamed Jarshan',
+      experience: 1,
+      skills: ['Laravel', 'MERN'],
+      employmenthistory: 'Faite, Software Engineer ',
+      EducationalQualification: 'Bsc Science',
+      desiredJob: 'Software Engineer',
+      cvUrl: '/path/to/cv.pdf',
+    },
+    {
+      id: 2,
+      fullName: 'Ravi',
+      experience: 5,
+      skills: ['React', 'Node.js'],
+      employmenthistory: 'RNR Solution, Frontend Developer ',
+      EducationalQualification: 'Bsc Computing',
+      desiredJob: 'Frontend Developer',
+      cvUrl: '/path/to/cv.pdf',
+    },
+    {
+      id: 3,
+      fullName: 'Jane Smith',
+      experience: 3,
+      skills: ['Python', 'Data Analysis'],
+      employmenthistory: 'Global, Data scientist ',
+      EducationalQualification: 'Bsc Science',
+      desiredJob: 'Data Scientist',
+      cvUrl: '/path/to/cv.pdf',
+    },
+    {
+      id: 4,
+      fullName: 'Mohamed Jarshan',
+      experience: 1,
+      skills: ['Laravel', 'MERN'],
+      employmenthistory: 'WSO2, Frontend Developer ',
+      EducationalQualification: 'Bsc Maths',
+      desiredJob: 'Software Engineer',
+      cvUrl: '/path/to/cv.pdf',
+    },
+
+    {
+      id: 5,
+      fullName: 'Kumar',
+      experience: 1,
+      skills: ['Laravel', 'MERN'],
+      employmenthistory: 'IFS, Full Stack Developer ',
+      EducationalQualification: 'Bsc Science',
+      desiredJob: 'Software Engineer',
+      cvUrl: '/path/to/cv.pdf',
+    },
+
+    {
+      id: 6,
+      fullName: 'Nilakshan',
+      experience: 6,
+      skills: ['Laravel', 'MERN'],
+      employmenthistory: 'IFS, Full Stack Developer ',
+      EducationalQualification: 'Bsc Science',
+      desiredJob: 'Data Scientist',
+      cvUrl: '/path/to/cv.pdf',
+    },
+
+    {
+      id: 7,
+      fullName: 'Sanjayan',
+      experience: 1,
+      skills: ['Laravel', 'MERN'],
+      employmenthistory: 'WSO2, Frontend Developer ',
+      EducationalQualification: 'Bsc Maths',
+      desiredJob: 'Software Engineer',
+      cvUrl: '/path/to/cv.pdf',
+    },
+
+    {
+      id: 8,
+      fullName: 'Akshanyan',
+      experience: 3,
+      skills: ['Python', 'Data Analysis'],
+      employmenthistory: 'Global, Data scientist ',
+      EducationalQualification: 'Bsc Software Engineer',
+      desiredJob: 'Data Scientist',
+      cvUrl: '/path/to/cv.pdf',
+    },
+
+   
+    
+  ]);
+
+  const filteredCandidates = candidates.filter((candidate) =>
+    candidate.desiredJob.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="recruiter-dashboard">
-      <input type="text" placeholder="Search by Job Position..." onChange={(e) => setSearch(e.target.value)} />
-      {mockCandidates.filter((c) => c.jobPreference.toLowerCase().includes(search.toLowerCase()))
-        .map((candidate, index) => <CandidateCard key={index} candidate={candidate} />)}
+      <h1>Recruiter Dashboard</h1>
+      <input
+        type="text"
+        className="search-bar"
+        placeholder="Search by job position..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+
+      <div className="candidates-container">
+        {filteredCandidates.map((candidate) => (
+          <div key={candidate.id} className="candidate-card">
+            <h3>{candidate.fullName}</h3>
+            <p>Experience: {candidate.experience} years</p>
+            <p>Employment History: {candidate.employmenthistory}</p>
+            <p>Skills: {candidate.skills.join(', ')}</p>
+            <p>Educational Qualification: {candidate.EducationalQualification}</p>
+            <p>Desired Job: {candidate.desiredJob}</p>
+            
+            <a href={candidate.cvUrl} download className="cv-download-btn">Download CV</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default RecruiterDashboard;
+

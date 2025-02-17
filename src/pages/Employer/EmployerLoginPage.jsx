@@ -3,6 +3,7 @@ import React from "react";
 import EmployerLogin from "../../components/EmployerLogin";
 import "../../styles/EmployerLogin.css"; // Ensure styling is applied
 
+
 const EmployerLoginPage = () => {
 
   
@@ -12,6 +13,7 @@ const EmployerLoginPage = () => {
     <div>
        {/* ✅ Navbar remains visible */}
       <EmployerLogin /> {/* ✅ Employer Login Form */}
+      
     </div>
   );
 };

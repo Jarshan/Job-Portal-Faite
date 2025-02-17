@@ -1,0 +1,100 @@
+/* Recruiter Dashboard Styles */
+.recruiter-dashboard {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading Style */
+.recruiter-dashboard h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search Input */
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Candidates Container */
+.candidates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Candidate Card */
+.candidate-card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Candidate Name */
+.candidate-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Candidate Details */
+.candidate-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Download CV Button */
+.cv-download-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cv-download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .candidates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .candidate-card {
+        width: 90%;
+    }
+}

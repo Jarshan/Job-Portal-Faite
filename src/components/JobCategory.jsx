@@ -23,7 +23,7 @@ const JobCategory = () => {
   return (
     <div className="job-category">
       <h2>
-        Find Your Jobs By <span>Category</span>
+        Find Your Jobs By <span>Categories</span>
       </h2>
       <div className="category-container">
         {jobCategory.map((category, index) => (

@@ -127,7 +127,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h1>FAITE.JOB</h1>
+        <h1>FAITE.<span>JOB</span></h1>
       </div>
 
       <div className="nav-links">
@@ -190,14 +190,14 @@ const Navbar = () => {
           onMouseEnter={() => handleMouseEnter("employer")}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="employer-btn">+ For Employers</button>
+          <button className="employer-btn">For Recruiters</button>
 
           {dropdown === "employer" && (
             <div className="dropdown">
               <Link to="/buy-online">Buy Online</Link>
               <Link to="/talent-cloud">Faite Talent Cloud</Link>
               <button onClick={() => navigate("/employer-login")}>
-                Employer Login
+                Recruiter Login
               </button>
             </div>
           )}

@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #1f3543;
+  box-shadow: 0px 4px 6px rgba(224, 9, 9, 0.1);
   position: relative;
   z-index: 100;
 }
@@ -14,7 +14,11 @@
 .logo h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: orange;
+}
+
+.logo h1 span {
+  color: white;
 }
 
 /* ====== Navigation Links ====== */
@@ -29,7 +33,7 @@
 .auth-links a,
 .nav-item > a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
   padding: 10px;
   transition: color 0.3s ease-in-out;
@@ -97,7 +101,7 @@
 .dropdown a:hover,
 .dropdown button:hover {
   background-color: orange;
-  color: white;
+  color: white !important;
 }
 
 /* ====== Employer Button Styling ====== */
@@ -152,10 +156,7 @@
 }
 
 /* ====== Authentication Links (Register & Login) ====== */
-.auth-links {
-  display: flex;
-  gap: 15px;
-}
+
 
 /* Hover Effect for Register & Login */
 .auth-links a:hover {

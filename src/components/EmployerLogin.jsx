@@ -51,6 +51,7 @@
 import React, { useState } from "react";
 import "../styles/EmployerLogin.css";
 
+
 const EmployerLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -67,8 +68,24 @@ const EmployerLogin = () => {
   };
 
   return (
+    
+    
     <div className="employer-login-container">
-      <div className="employer-login">
+      
+
+
+      <div className="welcome-section">
+          <h2>Select the Perfect Candidate for Your Business</h2>
+          <p>To Choose Right Jobs.</p>
+          <button className="post-job-btn">+ Post Jobs</button>
+          <button className="post-job-btn">Search Candidates</button>
+        </div>
+
+
+
+
+        <div className="employer-login">
+
         <h2>Employer Login</h2>
         <form onSubmit={handleLogin}>
           <input
@@ -95,6 +112,10 @@ const EmployerLogin = () => {
       </div>
     </div>
   );
+
+
+  
+ 
 };
 
 export default EmployerLogin;

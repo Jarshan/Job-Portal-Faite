@@ -106,7 +106,8 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import JobCategory from './components/JobCategory';
 import CompanySection from './components/CompaniesSection';
-import EmployerLogin from './components/EmployerLogin';
+
+import EmployerLoginPage from './pages/Employer/EmployerLoginPage';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -137,7 +138,7 @@ const App = () => {
           <Route path="/recruiter" element={<RecruiterDashboard />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/employer-login" element={<EmployerLogin />} />
+          <Route path="/employer-login" element={<EmployerLoginPage />} />
         </Routes>
       </Layout>
     </Router>

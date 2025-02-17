@@ -1,14 +1,3 @@
-// import "../styles/Hero.css";
-
-// const Hero = () => (
-//   <div className="home">
-//     <h2>Welcome to the Job Portal</h2>
-//     <p>Find the best candidates and jobs here.</p>
-//   </div>
-// );
-
-// export default Hero;
-
 import { useState, useEffect } from "react";
 import "../styles/Hero.css";
 
@@ -34,13 +23,36 @@ const Hero = () => {
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
       <div className="hero-content">
-        <h2>Job Happiness Starts Here</h2>
-        <p>Sri Lanka's Trusted Job Search Portal</p>
+        <h1>Find your dream job now</h1>
+        <h4>Sri Lanka's Trusted Job Search Portal</h4>
+        <p>5 lakh + jobs for you to explore</p>
         <div className="search-bar">
           <input type="text" placeholder="Job title, keywords or company name" />
+
+
+          <select>
+          <option value="" disabled selected hidden>Select Experience</option> 
+            <option>Fresher</option>
+            <option>1 year</option>
+            <option>2 years</option>
+            <option>3 years</option>
+            <option>5 years</option>
+            <option>10 years</option>
+            <option>15 years</option>
+            <option>20 years</option>
+            <option>25 years</option>
+          </select>
+
           <select>
             <option>Sri Lanka</option>
+            <option>(+41) Switzerland</option>
+            <option>(+44) UK</option>
+            <option>(+91) India</option>
+            <option>(+27) South Africa</option>
           </select>
+          
+
+          
           <button>Search Jobs</button>
         </div>
       </div>

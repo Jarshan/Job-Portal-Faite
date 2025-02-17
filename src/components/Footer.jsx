@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h2>Jobenvoy.com</h2>
-          <p>Level 10, East Tower World Trade Center, Colombo 1, Sri Lanka</p>
-          <p>Tel: +94 112 388 655</p>
-          <p>Email: info@jobenvoy.com</p>
+          <h2>FAITE.JOB</h2>
+          <p>Colombo, Sri Lanka</p>
+          <p>Tel: +94 761572763</p>
+          <p>Email: jarshanjauffar@gmail.com</p>
           <div className="social-icons">
             <FaInstagram />
             <FaTiktok />
@@ -19,26 +19,37 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-section">
-          <h3>Job Seekers</h3>
-          <Link to="/register">Register Now</Link>
-          <Link to="/jobs">Search Jobs</Link>
-          <Link to="/login">Login</Link>
+          
+        
+
+<Link to="/login">About us</Link>
+<Link to="/login">Careers</Link>
+<Link to="/login">Employer home </Link>
+<Link to="/login">Sitemap</Link>
+<Link to="/login">Credits</Link>
+
         </div>
         <div className="footer-section">
-          <h3>Employers</h3>
-          <Link to="/post-job">Post a Job</Link>
-          <Link to="/advertise">Advertise</Link>
-          <Link to="/terms">Terms of Service</Link>
+          
+<Link to="/login">Help Center</Link>
+<Link to="/login">Summons/Notices</Link>
+<Link to="/login">Greivances</Link>
+<Link to="/login">Report Issues</Link>
+
+
         </div>
         <div className="footer-section">
-          <h3>Quick Links</h3>
-          <Link to="/about">About Us</Link>
-          <Link to="/contact">Contact Us</Link>
-          <Link to="/faq">FAQ</Link>
+         
+
+
+<Link to="/login">Privacy Policy</Link>
+<Link to="/login">Terms & Conditions</Link>
+<Link to="/login">Fraud Alert</Link>
+<Link to="/login">Trust & Safety</Link>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2025, Jobenvoy.com</p>
+        <p>© 2025, Mohamed Jarshan</p>
       </div>
     </footer>
   );

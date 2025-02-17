@@ -99,12 +99,12 @@ const EmployerLogin = () => {
       <div className="welcome-section">
         <h2>Select the Perfect Candidate for Your Business</h2>
         <p>To Choose Right Jobs.</p>
-        <button className="post-job-btn">+ Post Jobs</button>
+        <button className="post-job-btn">Post Jobs</button>
         <button className="post-job-btn" onClick={() => navigate("/recruiter")}>Search Candidates</button> {/* ✅ Navigate to recruiter */}
       </div>
 
       <div className="employer-login">
-        <h2>Employer Login</h2>
+        <h2>Recruiter Login</h2>
         <form onSubmit={handleLogin}>
           <input
             type="email"

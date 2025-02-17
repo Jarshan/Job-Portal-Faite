@@ -27,7 +27,7 @@ const Hero = () => {
         <h4>Sri Lanka's Trusted Job Search Portal</h4>
         <p>5 lakh + jobs for you to explore</p>
         <div className="search-bar">
-          <input type="text" placeholder="Job title, keywords or company name" />
+          <input type="text" placeholder="Enter Skills, designations, companies" />
 
 
           <select>
@@ -44,6 +44,7 @@ const Hero = () => {
           </select>
 
           <select>
+          <option value="" disabled selected hidden>Select Location</option> 
             <option>Sri Lanka</option>
             <option>(+41) Switzerland</option>
             <option>(+44) UK</option>

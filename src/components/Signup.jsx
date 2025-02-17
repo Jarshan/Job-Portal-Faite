@@ -21,7 +21,7 @@ const SignUp = () => {
             className={userType === "employer" ? "active" : ""}
             onClick={() => setUserType("employer")}
           >
-            Employer
+            Recruiter
           </button>
         </div>
       </div>
@@ -33,49 +33,49 @@ const SignUp = () => {
             <div className="input-group">
                 
               <input type="text" placeholder="Full Name" required />
-              <span className="icon">👤</span>
+              
             </div>
 
             
 
             <div className="input-group">
               <input type="email" placeholder="Email ID" required />
-              <span className="icon">📧</span>
+             
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Password" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Years of Experience" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Worked Company Name" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Position" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Key Skills" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Educational Qualification" required />
-              <span className="icon">🔑</span>
+             
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Job Preference" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             
@@ -92,7 +92,7 @@ const SignUp = () => {
 
             <div className="input-group">
               <input type="text" placeholder="Mobile Number" required />
-              <span className="icon">📞</span>
+              
             </div>
 
             <div className="experience-selection">
@@ -128,22 +128,22 @@ const SignUp = () => {
           
             <div className="input-group">
               <input type="text" placeholder="Organization Name" required />
-              <span className="icon">🏢</span>
+              
             </div>
 
             <div className="input-group">
               <input type="email" placeholder="Email" required />
-              <span className="icon">📧</span>
+              
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Password" required />
-              <span className="icon">🔑</span>
+              
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Re-enter password" required />
-              <span className="icon">🔑</span>
+             
             </div>
 
             <div className="input-group">
@@ -158,7 +158,7 @@ const SignUp = () => {
 
             <div className="input-group">
               <input type="text" placeholder="Phone Number" required />
-              <span className="icon">📞</span>
+              
             </div>
 
             <div className="input-group">
@@ -174,7 +174,7 @@ const SignUp = () => {
 
             <div className="input-group">
               <input type="text" placeholder="Job title of contact" required />
-              <span className="icon">📌</span>
+             
             </div>
           </>
         )}

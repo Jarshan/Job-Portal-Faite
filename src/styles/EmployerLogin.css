@@ -48,7 +48,7 @@
     justify-content: space-between; /* Space between the text and the form */
     
     padding-left: 10%; /* Space for the left section */
-    background: url("Images/Pic1.jpg") center/cover no-repeat; /* Hero section background */
+    background: url("Images/Pic13.jpg") center/cover no-repeat; /* Hero section background */
     background-size: cover;
     background-position: center;
     
@@ -75,15 +75,20 @@
     transform: translateY(-50%); /* Fine-tune the vertical centering */
   }
   
-  .welcome-section h2 {
+  .welcome-section h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
+    color: black;
+    background-color: orange;
+    
   }
   
   .welcome-section p {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
+    color: white;
+    
   }
   
   .post-job-btn {

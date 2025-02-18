@@ -82,7 +82,7 @@ const EmployerLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate(); // ✅ Use navigate for redirection
+  const navigate = useNavigate(); //  Use navigate for redirection
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -97,10 +97,10 @@ const EmployerLogin = () => {
   return (
     <div className="employer-login-container">
       <div className="welcome-section">
-        <h2>Select the Perfect Candidate for Your Business</h2>
+        <h1>Select the Perfect Candidate for Your Business</h1>
         <p>To Choose Right Jobs.</p>
         <button className="post-job-btn">Post Jobs</button>
-        <button className="post-job-btn" onClick={() => navigate("/recruiter")}>Search Candidates</button> {/* ✅ Navigate to recruiter */}
+        <button className="post-job-btn" onClick={() => navigate("/recruiter")}>Search Candidates</button> {/*  Navigate to recruiter */}
       </div>
 
       <div className="employer-login">

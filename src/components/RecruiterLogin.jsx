@@ -6,7 +6,7 @@ const RecruiterLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate(); //  Use navigate for redirection
+  const navigate = useNavigate(); 
 
   const handleLogin = (e) => {
     e.preventDefault();

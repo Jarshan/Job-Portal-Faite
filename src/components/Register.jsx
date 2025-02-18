@@ -29,71 +29,55 @@ const Register = () => {
       <form className="signup-form">
         {userType === "jobseeker" ? (
           <>
-             
+
             <div className="input-group">
-                
+
               <input type="text" placeholder="Full Name" required />
-              
+
             </div>
 
-            
+
 
             <div className="input-group">
               <input type="email" placeholder="Email ID" required />
-             
+
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Password" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Years of Experience" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Worked Company Name" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Position" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Key Skills" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Educational Qualification" required />
-             
+
             </div>
 
             <div className="input-group">
               <input type="text" placeholder="Job Preference" required />
-              
-            </div>
 
-            
-
-            <div className="input-group">
-              <select>
-                <option>(+94) Sri Lanka</option>
-                <option>(+41) Switzerland</option>
-                <option>(+44) UK</option>
-                <option>(+91) India</option>
-                <option>(+27) South Africa</option>
-              </select>
             </div>
-
-            <div className="input-group">
-              <input type="text" placeholder="Mobile Number" required />
-              
-            </div>
+ 
 
             <div className="experience-selection">
               <button
@@ -125,25 +109,25 @@ const Register = () => {
           </>
         ) : (
           <>
-          
+
             <div className="input-group">
               <input type="text" placeholder="Organization Name" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="email" placeholder="Email" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Password" required />
-              
+
             </div>
 
             <div className="input-group">
               <input type="password" placeholder="Re-enter password" required />
-             
+
             </div>
 
             <div className="input-group">
@@ -158,7 +142,7 @@ const Register = () => {
 
             <div className="input-group">
               <input type="text" placeholder="Phone Number" required />
-              
+
             </div>
 
             <div className="input-group">
@@ -174,7 +158,7 @@ const Register = () => {
 
             <div className="input-group">
               <input type="text" placeholder="Job title of contact" required />
-             
+
             </div>
           </>
         )}

@@ -8,16 +8,16 @@
 // // const Navbar = () => (
 // //   <nav className="navbar">
 // //     <div className="logo">
-    
+
 // //       <h1>FAITE.JOB</h1>
 // //     </div>
 // //     <div className="nav-links">
 // //       <Link to="/">Home</Link>
-      
+
 // //       <Link to="/jobs">Jobs</Link>
 // //       <Link to="/companies">Companies</Link>
 // //       <Link to="/services"> Services</Link>
-      
+
 // //     </div>
 // //     <div className="auth-links">
 // //       <Link to="/signup">Sign Up</Link>
@@ -44,15 +44,15 @@
 //     <nav className="navbar">
 //       <div className="logo">
 //         <h1>FAITE.JOB</h1>
-        
+
 //       </div>
-      
+
 //       <div className="nav-links">
 
 //       <div className="home-tab">
 //       <Link to="/">Home</Link>
 //         </div>
-      
+
 //         <div 
 //           className="nav-item"
 //           onMouseEnter={() => handleMouseEnter("jobs")}
@@ -98,7 +98,7 @@
 //             </div>
 //           )}
 //         </div>
-        
+
 //       </div>
 
 //       <div className="auth-links">

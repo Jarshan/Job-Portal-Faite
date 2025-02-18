@@ -1,7 +1,7 @@
 import React from "react";
 
 import RecruiterLogin from "../../components/RecruiterLogin";
-import "../../styles/RecruiterLogin.css"; // Ensure styling is applied
+import "../../styles/RecruiterLogin.css"; 
 
 
 const EmployerLoginPage = () => {
@@ -12,7 +12,7 @@ const EmployerLoginPage = () => {
     
     <div>
       
-      <RecruiterLogin /> {/* ✅ Employer Login Form */}
+      <RecruiterLogin /> 
       
     </div>
   );

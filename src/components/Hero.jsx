@@ -32,7 +32,7 @@ const Hero = () => {
 
 
           <select>
-          <option value="" disabled selected hidden>Select Experience</option> 
+            <option value="" disabled selected hidden>Select Experience</option>
             <option>Fresher</option>
             <option>1 year</option>
             <option>2 years</option>
@@ -45,16 +45,16 @@ const Hero = () => {
           </select>
 
           <select>
-          <option value="" disabled selected hidden>Select Location</option> 
+            <option value="" disabled selected hidden>Select Location</option>
             <option>Sri Lanka</option>
             <option>(+41) Switzerland</option>
             <option>(+44) UK</option>
             <option>(+91) India</option>
             <option>(+27) South Africa</option>
           </select>
-          
 
-          
+
+
           <button>Search Jobs</button>
         </div>
       </div>

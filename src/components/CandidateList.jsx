@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/CandidateList.css"; // Import the CSS file
+import "../styles/CandidateList.css";
 
 const CandidateList = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -94,7 +94,7 @@ const CandidateList = () => {
   return (
     <div className="recruiter-dashboard">
       <h1>Candidate Lists</h1>
-      
+
       {/* Centered Search Bar */}
       <div className="search-container">
         <input

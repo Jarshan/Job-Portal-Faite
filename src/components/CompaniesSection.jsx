@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/CompaniesSection.css"; // Create a CSS file for styling
+import "../styles/CompaniesSection.css";
 
 const CompaniesSection = () => {
   const topCompanies = [

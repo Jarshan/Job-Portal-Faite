@@ -36,8 +36,6 @@ const Register = () => {
 
             </div>
 
-
-
             <div className="input-group">
               <input type="email" placeholder="Email ID" required />
 

@@ -22,6 +22,10 @@
     color: orange;
   }
   
+  .footer-left h2 span {
+    color: white;
+  }
+
   .footer-left p {
     margin: 5px 0;
   }

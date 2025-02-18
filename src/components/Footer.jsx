@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h2>FAITE.JOB</h2>
+          <h2>FAITE.<span>JOB</span></h2>
           <p>Colombo, Sri Lanka</p>
           <p>Tel: +94 761572763</p>
           <p>Email: jarshanjauffar@gmail.com</p>

@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import "../styles/Hero.css";
 
 const images = [
-  "/Images/Pic1.jpg",
   "/Images/Pic2.jpg",
+  "/Images/Pic15.jpg",
+  "/Images/Pic14.jpg",
   "/Images/Pic3.jpg",
 ];
 

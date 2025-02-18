@@ -59,7 +59,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CandidateForm from './components/CandidateForm';
 import RecruiterDashboard from './components/RecruiterDashboard';
 import SignUp from './components/Register';
 import Login from './components/Login';
@@ -71,7 +70,7 @@ import EmployerLoginPage from './pages/Employer/EmployerLoginPage';
 const Layout = ({ children }) => {
   const location = useLocation();
   const isAuthPage = location.pathname === "/signup" || location.pathname === "/login";
-  const isEmployerLogin = location.pathname === "/employer-login";
+  const isRecruiterLogin = location.pathname === "/employer-login";
   const isRecruiterPage = location.pathname === "/recruiter"; // ✅ Hide JobCategory & CompanySection here
 
   return (
@@ -81,8 +80,8 @@ const Layout = ({ children }) => {
       <div>{children}</div>
 
       {/* ✅ Hide JobCategory & CompanySection ONLY on /recruiter */}
-      {!isAuthPage && !isEmployerLogin && !isRecruiterPage && <JobCategory />}
-      {!isAuthPage && !isEmployerLogin && !isRecruiterPage && <CompanySection />}
+      {!isAuthPage && !isRecruiterLogin && !isRecruiterPage && <JobCategory />}
+      {!isAuthPage && !isRecruiterLogin && !isRecruiterPage && <CompanySection />}
 
       <Footer /> {/* ✅ Footer stays on all pages */}
     </div>
@@ -95,7 +94,6 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/candidate" element={<CandidateForm />} />
           <Route path="/recruiter" element={<RecruiterDashboard />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />

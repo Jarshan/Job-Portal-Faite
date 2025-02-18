@@ -93,7 +93,7 @@ const RecruiterDashboard = () => {
 
   return (
     <div className="recruiter-dashboard">
-      <h1>Candidate Dashboard</h1>
+      <h1>Candidate Lists</h1>
       
       {/* Centered Search Bar */}
       <div className="search-container">

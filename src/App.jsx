@@ -61,7 +61,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CandidateForm from './components/CandidateForm';
 import RecruiterDashboard from './components/RecruiterDashboard';
-import SignUp from './components/Signup';
+import SignUp from './components/Register';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import JobCategory from './components/JobCategory';

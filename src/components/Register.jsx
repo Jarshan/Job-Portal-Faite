@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../styles/SignUp.css";
+import "../styles/Register.css";
 
-const SignUp = () => {
+const Register = () => {
   const [userType, setUserType] = useState("jobseeker");
   const [experience, setExperience] = useState("experienced");
 
@@ -15,7 +15,7 @@ const SignUp = () => {
             className={userType === "jobseeker" ? "active" : ""}
             onClick={() => setUserType("jobseeker")}
           >
-            Jobseeker
+            Candidate
           </button>
           <button
             className={userType === "employer" ? "active" : ""}
@@ -187,4 +187,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;

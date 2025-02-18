@@ -11,7 +11,7 @@ const EmployerLoginPage = () => {
   return (
     
     <div>
-       {/* ✅ Navbar remains visible */}
+      
       <RecruiterLogin /> {/* ✅ Employer Login Form */}
       
     </div>

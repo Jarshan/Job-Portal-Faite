@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "../styles/RecruiterDashboard.css"; // Import the CSS file
+import "../styles/CandidateList.css"; // Import the CSS file
 
-const RecruiterDashboard = () => {
+const CandidateList = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const candidates = [
@@ -123,4 +123,4 @@ const RecruiterDashboard = () => {
   );
 };
 
-export default RecruiterDashboard;
+export default CandidateList;

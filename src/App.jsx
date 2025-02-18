@@ -59,7 +59,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import RecruiterDashboard from './components/RecruiterDashboard';
+import CandidateList from './components/CandidateList';
 import SignUp from './components/Register';
 import Login from './components/Login';
 import Footer from './components/Footer';
@@ -94,7 +94,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/recruiter" element={<RecruiterDashboard />} />
+          <Route path="/recruiter" element={<CandidateList />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/employer-login" element={<EmployerLoginPage />} />
